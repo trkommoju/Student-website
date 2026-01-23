@@ -1,0 +1,73 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>studentUpdate</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            min-height: 100-vh;
+        }
+
+        form {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="studentUpdate" method="post">
+        <h1>Update Student</h1>
+
+        <div>
+            <label for="studentUpdateID">ID:</label>
+            <input type="text" id="studentUpdateID" name="studentUpdateID" placeholder="Enter the ID" required>
+        </div>
+
+        <div>
+            <label for="studentUpdateFirstName">First Name:</label>
+            <input type="text" id="studentUpdateFirstName" name="studentUpdateFirstName"
+                placeholder="Enter your first name" required>
+        </div>
+
+        <div>
+            <label for="studentUpdateLastName">Last Name:</label>
+            <input type="text" id="studentUpdateLastName" name="studentUpdateLastName"
+                placeholder="Enter your last name" required>
+        </div>
+
+        <div>
+            <label for="studentUpdateEmail">Email:</label>
+            <input type="email" id="studentUpdateEmail" name="studentUpdateEmail" placeholder="Enter your email"
+                required>
+        </div>
+
+        <div>
+            <label for="studentUpdateDateOfBirth">Date of Birth</label>
+            <input type="date" id="studentUpdateDateOfBirth" name="studentUpdateDateOfBirth"
+                placeholder="Enter your date of birth" required>
+        </div>
+
+        <div>
+            <label for="studentUpdateGrade">Grade</label>
+            <input type="number" id="studentUpdateGrade" name="studentUpdateGrade" placeholder="Enter the grade"
+                required>
+        </div>
+
+
+        <input type="submit" value="submit">
+
+
+        <a href="dashboard.html">Home</a>
+
+        <div id="messageStudentUpdate"></div>
+        <br>
+    </form>
+    <script src="index.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

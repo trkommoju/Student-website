@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>login page</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            min-height: 100-vh;
+        }
+
+        form {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="loginForm" method="post">
+        <h1>Login</h1>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+
+        <div>
+            <p>Don't have an account? <a href="signUp.html">sign up</a></p>
+        </div>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+        <div id="messageLogin" style="color: red; margin-top: 10px;"></div>
+
+    </form>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

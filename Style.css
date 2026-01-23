@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*login*/
+#loginForm h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#loginForm div {
+    margin-bottom: 10px;
+}
+
+#loginForm label {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+    width: 140px;
+    vertical-align: center;
+    text-align: left;
+    font-size: 14px;
+    padding: 2px;
+    border-radius: 5px;
+
+}
+
+#loginForm input[type="submit"] {
+    display: block;
+    margin: 15px auto 50px auto;
+    text-align: center;
+    font-size: 15px;
+    padding: 7px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#loginForm input[type="submit"]:hover {
+    background-color: lightgray;
+}
+
+
+
+.text-box {
+    padding: 10px;
+    text-align: center;
+}
+
+.logout {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.student-table th {
+    background-color: rgb(56, 55, 55);
+    color: white;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.student-table td {
+    background-color: white;
+    color: black;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.buttonUpdate {
+    background-color: rgb(23, 128, 23);
+    color: white;
+    text-align: center;
+}
+
+.deleteStudent {
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+
+#studentUpdate {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#studentUpdate h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#studentUpdate div {
+    margin-bottom: 20px;
+}
+
+#studentUpdate Label {
+    display: inline-block;
+    width: 180px;
+    text-align: left;
+    margin-right: 20px;
+    font-size: 18px;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#studentUpdate input[type="text"],
+#studentUpdate input[type="email"],
+#studentUpdate input[type="number"],
+#studentUpdate input[type="date"] {
+    display: inline-block;
+    width: 180px;
+    text-align: left;
+    font-size: 16px;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 7px;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+}
+
+#studentUpdate input[type="submit"] {
+    display: block;
+    margin: 30px auto 20px auto;
+    padding: 7px 50px;
+    font-size: 18px;
+    border: 2px solid;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#studentUpdate input[type="submit"]:hover {
+    background-color: green;
+    color: white;
+}
+
+#studentCreate {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#studentCreate h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#studentCreate div {
+    margin-bottom: 20px;
+}
+
+#studentCreate label {
+    display: inline-block;
+    width: 180px;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 17px;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#studentCreate input[type="text"],
+#studentCreate input[type="email"],
+#studentCreate input[type="date"],
+#studentCreate input[type="number"] {
+    width: 180px;
+    text-align: left;
+    font-size: 16px;
+    border: 2px solid;
+    border-radius: 7px;
+    vertical-align: middle;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#studentCreate input[type="submit"] {
+    display: block;
+    margin: 30px auto 50px auto;
+    padding: 7px 50px;
+    border: 2px solid;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#studentCreate input[type="submit"]:hover {
+    background-color: green;
+    color: white;
+}
+
+.dropMenu ul li {
+    display: block;
+}
+
+.dropMenu {
+    position: absolute;
+    background-color: lightgray;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    text-align: left;
+    z-index: 0;
+    transition: 1s;
+    left: -200px;
+}
+
+.dropMenu .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.fa {
+    display: fixed;
+    top: 5px;
+    left: 10px;
+    color: black;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.dropMenu ul li a {
+    padding: 20px;
+    display: block;
+    font-style: none;
+    color: black;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.dropMenu ul li a:hover {
+    color: white;
+}
