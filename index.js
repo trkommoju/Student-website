@@ -12,6 +12,11 @@ const API_URL = 'http://localhost:8080/api/auth';
 const signupForm = document.getElementById('signupForm');
 const messageSignup = document.getElementById('messageSignup');
 
+function logout() {
+    localStorage.removeItem('token');
+    window.location.href = "Login.html";
+}
+
 if (signupForm) {
     signupForm.addEventListener('submit', async function (e) {
         e.preventDefault();
@@ -94,55 +99,4 @@ if (loginForm) {
             console.error('Login error:', error);
         }
     });
-}
-const studentCreateForm = document.getElementById('studentCreate');
-const messageStudentCreate = document.getElementById('messageStudentCreate');
-
-if (studentCreateForm) {
-    studentCreateForm.addEventListener('submit', async function (e) {
-        e.preventDefault();
-        const token2 = localStorage.getItem('token');
-        if (!token2) {
-            messageStudentCreate.textContent = "please login again";
-            window.location.href = 'Login.html';  // Redirect to login
-            return;
-        }
-        const studentCreateFirstName = document.getElementById('studentCreateFirstName').value;
-        const studentCreateLastName = document.getElementById('studentCreateLastName').value;
-        const studentCreateEmail = document.getElementById('studentCreateEmail').value;
-        const studentCreateDateOfBirth = document.getElementById('studentCreateDateOfBirth').value;
-        const studentCreateGrade = document.getElementById('studentCreateGrade').value;
-        try {
-            const response = await fetch('http://localhost:8080/api/students', {
-                method: 'POST',
-                headers: {
-                    'Authorization': `Bearer ${token2}`,
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    first_name: studentCreateFirstName,
-                    last_name: studentCreateLastName,
-                    email: studentCreateEmail,
-                    date_of_birth: studentCreateDateOfBirth,
-                    grade: studentCreateGrade
-                })
-            });
-            const data = await response.json();
-            if (response.ok) {
-                messageStudentCreate.style.color = 'green';
-                messageStudentCreate.textContent = 'The student has been created';
-                setTimeout(() => {
-                    window.location.href = 'dashboard.html';
-                }, 1000);
-            } else {
-                messageStudentCreate.style.color = 'red';
-                messageStudentCreate.textContent = data.message || "unable to create Student";
-            }
-        } catch (error) {
-            messageStudentCreate.style.color = 'red';
-            messageStudentCreate.textContent = 'error connecting to the server'
-            console.error('fetch error:', error)
-        }
-    });
-
 }

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>dashboard</title>
+    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -11,48 +11,39 @@
 <body>
     <section class="header">
         <div class="text-box">
-            <h1>Student Admin</h1>
+            <h1 id="dashboardTitle">Admin Dashboard</h1>
         </div>
         <div class="logout">
-            <input type="button" value="Logout" onclick="window.location.href ='Login.html'">
+            <input type="button" value="Logout" onclick="logout()">
         </div>
         <div class="dropMenu" id="dropMenu">
             <i class="fa fa-times" onclick="hideMenu()"></i>
-            <ul>
-                <li><a href="studentCreate.html">Add a Student</a></li>
+            <ul id="menuItems">
+                <!---adds the list throught the javascript--->
             </ul>
         </div>
         <i class="fa fa-bars" onclick="showMenu()"></i>
         <hr>
     </section>
     <form id="dashboardForm" onsubmit="return">
-        <div class="students-list">
-            <h2>Students List:</h2>
+        <div class="listContainer">
+            <h2 id='listTitle'>List:</h2>
             <nobr>
                 <div class="searchBar">
                     <label for="searchInput">Search:</label>
                     <input type="text" name="searchInput" id="searchInput" placeholder="please enter">
                     <select id="options">
-                        <option>Name</option>
-                        <option>Email</option>
-                        <option>Grade</option>
+                        <!--options will be entered via the dashboard.js-->
                     </select>
                 </div>
             </nobr>
-            <table class="student-table">
-                <thead>
-                    <tr>
-                        <th>Student Name</th>
-                        <th>Student Email</th>
-                        <th>Student Grade</th>
-                        <th>Update Student</th>
-                        <th>Delete Student</th>
-                    </tr>
+            <table id='dataTable' class="data-table">
+                <thead id='tableHead'>
+                    <!--will be entered via dashboard.js-->
                 </thead>
-                <tbody id="studentTableBody">
-
+                <tbody id="tableBody">
+                    <!--will be entered via dashboard.js-->
                 </tbody>
-
             </table>
         </div>
 

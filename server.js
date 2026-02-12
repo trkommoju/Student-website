@@ -4,6 +4,7 @@ require('dotenv').config();
 
 const authRoutes = require('./src/routes/authRoutes');
 const studentRoutes = require('./src/routes/studentRoutes');
+const teacherRoutes = require('./src/routes/teacherRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -16,6 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/students', studentRoutes);
+app.use('/api/teachers', teacherRoutes);
 
 // Health check endpoint
 app.get('/', (req, res) => {

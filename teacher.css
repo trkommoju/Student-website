@@ -1,0 +1,97 @@
+.teacher-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.teacher-table th {
+    background-color: rgb(56, 55, 55);
+    color: white;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.teacher-table td {
+    background-color: white;
+    color: black;
+    text-align: center;
+    border: 1px solid black;
+    padding: 12px;
+}
+
+.buttonUpdate {
+    background-color: rgb(23, 128, 23);
+    color: white;
+    text-align: center;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.deleteTeacher {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.text-box {
+    padding: 10px;
+    text-align: center;
+}
+
+.logout {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.dropMenu ul li {
+    display: block;
+}
+
+.dropMenu {
+    position: absolute;
+    background-color: lightgray;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    text-align: left;
+    z-index: 0;
+    transition: 1s;
+    left: -200px;
+}
+
+.dropMenu .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.fa {
+    display: fixed;
+    top: 5px;
+    left: 10px;
+    color: black;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.dropMenu ul li a {
+    padding: 20px;
+    display: block;
+    font-style: none;
+    color: black;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.dropMenu ul li a:hover {
+    color: white;
+}

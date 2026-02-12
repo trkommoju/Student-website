@@ -1,0 +1,62 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            min-height: 100-vh;
+        }
+
+        form {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="createForm" method="post">
+        <h1 id="createTitle">Create</h1>
+        <div>
+            <label for="createFirstName">First Name:</label>
+            <input type="text" id="createFirstName" name="createFirstName" placeholder="Enter your first name" required>
+        </div>
+
+        <div>
+            <label for="createLastName">Last Name:</label>
+            <input type="text" id="createLastName" name="createLastName" placeholder="Enter your last name" required>
+        </div>
+
+        <div>
+            <label for="createEmail">Email:</label>
+            <input type="email" id="createEmail" name="createEmail" placeholder="Enter your email" required>
+        </div>
+
+        <div>
+            <label for="createDateOfBirth">Date of Birth</label>
+            <input type="date" id="createDateOfBirth" name="createDateOfBirth" placeholder="Enter your date of birth"
+                required>
+        </div>
+
+        <div>
+            <label for="createType" id="createTypeLabel">Type</label>
+            <input type="text" id="createType" name="createType" placeholder="Enter the grade" required>
+        </div>
+
+        <div>
+            <input type="submit" value="submit">
+        </div>
+
+        <a href="dashboard.html">Home</a>
+
+        <div id="messageCreate"></div>
+
+    </form>
+    <script src="Create.js"></script>
+</body>
+
+</html>

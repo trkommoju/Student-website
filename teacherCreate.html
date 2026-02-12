@@ -1,0 +1,65 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>studentCreate</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            min-height: 100-vh;
+        }
+
+        form {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="teacherCreate" method="post">
+        <h1>Create Teacher</h1>
+        <div>
+            <label for="teacherCreateFirstName">First Name:</label>
+            <input type="text" id="teacherCreateFirstName" name="teacherCreateFirstName"
+                placeholder="Enter your first name" required>
+        </div>
+
+        <div>
+            <label for="teacherCreateLastName">Last Name:</label>
+            <input type="text" id="teacherCreateLastName" name="teacherCreateLastName"
+                placeholder="Enter your last name" required>
+        </div>
+
+        <div>
+            <label for="teacherCreateEmail">Email:</label>
+            <input type="email" id="teacherCreateEmail" name="teacherCreateEmail" placeholder="Enter your email"
+                required>
+        </div>
+
+        <div>
+            <label for="teacherCreateDateOfBirth">Date of Birth</label>
+            <input type="date" id="teacherCreateDateOfBirth" name="teacherCreateDateOfBirth"
+                placeholder="Enter your date of birth" required>
+        </div>
+
+        <div>
+            <label for="teacherCreateGrade">Class</label>
+            <input type="word" id="teacherCreateClass" name="teacherCreateClass" placeholder="Enter the Class" required>
+        </div>
+
+        <div>
+            <input type="submit" value="submit">
+        </div>
+
+        <a href="teacherDashboard.html">Back</a>
+
+        <div id="messageStudentCreate"></div>
+
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>
